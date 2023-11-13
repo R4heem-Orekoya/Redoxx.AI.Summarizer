@@ -10,6 +10,7 @@ export default {
         Montserrat: ['Montserrat', 'sans-serif'],
         Inter: ['Inter', 'sans-serif'],
         Lato: ['Lato', 'sans-serif'],
+        Poppins: ['Poppins', 'sans-serif'],
       }
     },
   },

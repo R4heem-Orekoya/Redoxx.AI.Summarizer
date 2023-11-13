@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    font-family: 'Poppins', sans-serif;
-}
+@layer base {
+    html {
+      font-family: "Poppins", sans-serif;
+    }
+  }
 ::selection{
     background: #fb7185;
     color: #111111;
