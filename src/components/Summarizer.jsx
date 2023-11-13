@@ -48,10 +48,12 @@ const Summarizer = () => {
 
   return (
     <div className='w-[min(1200px,90%)] mx-auto flex flex-col items-center py-8'>
-        <form onSubmit={handleSubmit} className='bg-zinc-900 h-[50px] sm:h-[60px] w-[min(600px,100%)] rounded-md flex justify-between items-center focus-within:ring-1 focus-within:ring-rose-500'>
-            <Link size={25} className='mx-4'/>
-            <input onChange={(e) => setArticle({ ...article, url: e.target.value })} value={article.url} type="url" placeholder='Enter Article URL' className='flex-1 bg-transparent h-full outline-none text-sm md:text-lg' required/>
-            <button type='submit' className='h-[calc(100%-1rem)] aspect-square mx-2 grid place-items-center bg-zinc-800 rounded-[5px] focus:ring-1 focus:ring-rose-500'><ArrowDownFromLine size={20} className=''/></button>
+        <form onSubmit={handleSubmit} className='bg-zinc-900 h-[50px] sm:h-[60px] w-[min(600px,100%)] pl-4 rounded-md flex justify-between items-center focus-within:ring-1 focus-within:ring-rose-500'>
+            <span className='absolute'>
+                <Link size={20}/>
+            </span>
+            <input onChange={(e) => setArticle({ ...article, url: e.target.value })} value={article.url} type="url" placeholder='Enter Article URL' className='flex-1 bg-transparent ml-8 h-full outline-none text-sm md:text-lg' required/>
+            <button type='submit' className='h-[calc(100%-1rem)] p-1 aspect-square mx-2 grid place-items-center bg-zinc-800 rounded-[5px] focus:ring-1 focus:ring-rose-500'><ArrowDownFromLine size={20} className=''/></button>
         </form>
 
         <ul className='flex flex-col gap-2 mt-6 w-[min(600px,100%)] max-h-60 overflow-y-auto pr-3'>
