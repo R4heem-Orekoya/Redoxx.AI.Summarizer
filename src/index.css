@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Raleway", sans-serif;
+  }
+}
+::selection {
+  background: #4ade80;
+  color: #111111;
+}
+body {
+  background: #09090b;
+  color: #fff;
+}

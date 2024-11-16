@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Hero from './components/Hero'
 import Summarizer from './components/Summarizer'
 
