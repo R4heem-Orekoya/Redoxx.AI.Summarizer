@@ -1,12 +1,7 @@
 import { Github, BrainCircuit } from "lucide-react";
-import React from "react";
 import { Button } from "./ui/button";
 
 const Navbar = () => {
-  const openLink = (link: string) => {
-    window.open(link);
-  };
-
   return (
     <header className="w-full py-6 flex justify-between max-sm:justify-center items-center">
       <div className="text-lg font-semibold flex items-center gap-2">
@@ -14,14 +9,12 @@ const Navbar = () => {
         AI Summarizer
       </div>
 
-      <button
-        className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-md text-zinc-950 bg-green-500 hover:bg-green-600 transition font-medium"
-        onClick={() => openLink("https://github.com")}
-      >
-        <Github className="w-4 h-4 " />
-        Github
-      </button>
-      <Button>Github</Button>
+      <Button asChild>
+        <a href="https://github.com/R4heem-Orekoya/Redoxx.AI.Summarizer" className="flex items-center gap-2">
+          <Github className="w-4 h-4"/>
+          Github
+        </a>
+      </Button>
     </header>
   );
 };
