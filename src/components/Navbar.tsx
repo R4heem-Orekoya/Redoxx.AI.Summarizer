@@ -1,8 +1,9 @@
 import { Github, BrainCircuit } from "lucide-react";
 import React from "react";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
-  const openLink = (link) => {
+  const openLink = (link: string) => {
     window.open(link);
   };
 
@@ -20,6 +21,7 @@ const Navbar = () => {
         <Github className="w-4 h-4 " />
         Github
       </button>
+      <Button>Github</Button>
     </header>
   );
 };

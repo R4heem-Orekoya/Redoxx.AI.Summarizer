@@ -9,7 +9,7 @@ const headers = {
   },
 };
 
-export const useSummary = ({ articleUrl }) => {
+export const useSummary = ({ articleUrl }: { articleUrl: string }) => {
   const { data, isLoading, error } = useQuery({
     queryKey: ["summary"],
     queryFn: async () => {
