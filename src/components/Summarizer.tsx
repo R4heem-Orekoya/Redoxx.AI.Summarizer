@@ -2,6 +2,7 @@ import { Link, ArrowDownFromLine, Copy, Loader2, ClipboardCheck } from 'lucide-r
 import React, { useEffect, useState } from 'react'
 import { useLazyGetSummaryQuery } from '../services/article'
 import InputField from './InputField';
+import SavedLinks from './SavedLinks';
 
 const Summarizer = () => {
     const [article, setArticle] = useState({
@@ -62,7 +63,10 @@ const Summarizer = () => {
                 <ArrowDownFromLine className='w-4 h-4 sm:w-5 sm:h-5'/>
             </button>
         </form> */}
-        <InputField />
+        <div className='grid gap-8 w-[min(600px,100%)] grid-cols-1'>
+            <InputField />
+            <SavedLinks savedCount={3}/>
+        </div>
 
         <ul className='flex flex-col gap-2 mt-8 w-[min(600px,100%)] max-h-60 overflow-y-auto'>
             {allArticles.map((item, index) => (

@@ -9,14 +9,14 @@ const Navbar = () => {
         AI Summarizer
       </div>
 
-      <Button asChild>
+      <Button asChild className="max-sm:hidden">
         <a href="https://github.com/R4heem-Orekoya/Redoxx.AI.Summarizer" className="flex items-center gap-2">
           <Github className="w-4 h-4"/>
           Github
         </a>
       </Button>
     </header>
-  );
-};
+  )
+}
 
 export default Navbar;
